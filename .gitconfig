@@ -1,0 +1,59 @@
+[user]
+	name = plwg
+	email = 56353330+plwg@users.noreply.github.com
+
+[alias]
+	b = branch
+	c = commit
+	f = fetch
+	fp = fetch --prune
+	l = log --oneline --all --graph
+	last = log -1 HEAD
+	s = status -s
+	st = status
+    jump = switch
+    new = switch -c
+    pickaxe = log -S
+    reaxe = log -G
+    pulldown = !git stash --all && git fetch && git merge @{u}
+    qs = !git add . && git commit -m \"$(date)\"
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
+[init]
+	defaultBranch = main
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[push]
+	default = simple
+	autoSetupRemote = true
+	followTags = true
+[fetch]
+	# prune = true
+	# pruneTags = true
+	all = true
+[help]
+	autocorrect = prompt
+[commit]
+	verbose = true
+[rerere]
+	enabled = true
+	autoupdate = true
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
+[core]
+	excludesfile = /home/paul/.gitignore
+	fsmonitor = true
+	untrackedCache = true
+[merge]
+	conflictstyle = zdiff3
+[pull]
+	rebase = true
