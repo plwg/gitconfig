@@ -17,6 +17,7 @@
     reaxe = log -G
     pulldown = !git stash --all && git fetch && git merge @{u}
     qs = !git add . && git commit -m \"$(date)\"
+    unstage = restore --staged
 [column]
 	ui = auto
 [branch]
