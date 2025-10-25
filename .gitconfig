@@ -5,6 +5,7 @@
 [alias]
 	b = branch
 	c = commit
+    ca = commit -a
 	f = fetch
 	fp = fetch --prune
 	l = log --oneline --all --graph
