@@ -5,20 +5,20 @@
 [alias]
 	b = branch
 	c = commit
-    ca = commit -a
+	ca = commit -a
 	f = fetch
 	fp = fetch --prune
+	jump = switch
 	l = log --oneline --all --graph
 	last = log -1 HEAD
+	new = switch -c
+	pickaxe = log -S
+	qs = !git add . && git commit -m \"$(date)\"
+	reaxe = log -G
 	s = status -s
 	st = status
-    jump = switch
-    new = switch -c
-    pickaxe = log -S
-    reaxe = log -G
-    pulldown = !git stash --all && git fetch && git merge @{u}
-    qs = !git add . && git commit -m \"$(date)\"
-    unstage = restore --staged
+	sync = !git stash --all && git fetch && git reset --hard @{u}
+	unstage = restore --staged
 [column]
 	ui = auto
 [branch]
