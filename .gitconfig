@@ -11,8 +11,8 @@
 	jump = switch
 	l = log --oneline --all --graph
 	last = log -1 HEAD
-    new = switch -c
-    p = push --force-with-lease
+	new = switch -c
+	p = push --force-with-lease
 	pickaxe = log -S
 	qs = !git add . && git commit -m \"$(date)\"
 	reaxe = log -G
